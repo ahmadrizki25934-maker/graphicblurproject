@@ -1,14 +1,3 @@
-<link rel="stylesheet" href="style.css"> ```
-Sedangkan nama file asli yang Anda miliki adalah **`styles.css`** (dengan huruf **s**).
-
-Karena salah ketik (*typo*) nama file tersebut, browser mengabaikan seluruh instruksi layouting. Akibatnya, elemen `<video>` dan `<canvas>` yang seharusnya menumpuk secara presisi (karena `position: absolute`) berubah menjadi elemen vertikal biasa yang saling mendorong ke bawah. Hal ini juga menyebabkan sistem *mirroring* CSS tidak bekerja dan koordinat menjadi bergeser total.
-
-Berikut adalah perbaikan menyeluruh pada ketiga file agar tersinkronisasi 1:1 tanpa *offset* dan tata letak kembali menyatu dengan sempurna:
-
-### 1. Perbaikan `index.html`
-Ubah baris pemanggilan CSS agar mengarah tepat ke `styles.css`.
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
